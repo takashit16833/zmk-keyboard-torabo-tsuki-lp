@@ -101,7 +101,7 @@
 
 /* Trackpad Settings */
 /* Memory Map Position 0x41 - 0x49 */
-#define TRACKPAD_SETTINGS_0_0                    0x2C
+#define TRACKPAD_SETTINGS_0_0                    0x2F // bit0: Flip X, bit1: Flip Y, bit3: Swap X/Y
 #define TRACKPAD_SETTINGS_0_1                    0x04
 #define TRACKPAD_SETTINGS_1_0                    0x03
 #define TRACKPAD_SETTINGS_1_1                    0x02
