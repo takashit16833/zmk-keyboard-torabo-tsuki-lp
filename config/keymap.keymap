@@ -75,7 +75,7 @@
 &trans  &trans   &trans   &trans     &trans  &trans                   &trans  &trans &trans  &trans     &trans      &trans
 &trans  &trans   &trans   &trans     &trans  &trans                   &trans  &trans &trans  &trans     &trans      &trans
 &trans  &trans   &trans   &trans     &trans  &trans    &trans    &trans   &trans  &trans &trans  &trans     &trans      &trans
-&trans  &trans   &trans   &mkp LCLK  &cmd_w  &trans    &trans    &trans   &trans  &trans &trans  &trans     &trans      &trans
+&trans  &trans   &trans   &mkp RCLK  &cmd_w  &trans    &trans    &trans   &trans  &trans &trans  &trans     &trans      &trans
 &trans  &trans   &trans   &trans     &trans  &mkp MB4  &mkp MB5    &trans   &trans  &trans &trans  &trans     &trans      &trans
             >;
         };
