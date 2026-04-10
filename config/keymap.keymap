@@ -16,17 +16,6 @@
 };
 
 / {
-    /* 横スクロール成分だけを 0 にするための processor を追加 */
-    input_processors {
-        zip_scroll_x_lock: zip_scroll_x_lock {
-            compatible = "zmk,input-processor-scaler";
-            #input-processor-cells = <2>;
-            type = <INPUT_EV_REL>;
-            codes = <INPUT_REL_HWHEEL>;
-            track-remainders;
-        };
-    };
-  
     macros {
         cmd_w: cmd_w {
             compatible = "zmk,behavior-macro";
@@ -91,9 +80,4 @@
             >;
         };
     };
-};
-
-/* 通常スクロール時の横ブレを消す */
-&pointing_listener {
-    input-processors = <&zip_scroll_x_lock 0 1>;
 };
