@@ -10,20 +10,8 @@
         layers = <3 4>;
         input-processors = <
             &zip_xy_to_scroll_mapper
-            &zip_scroll_scaler 1 5
-        >;
-    };
-};
-
-&trackball_listener {
-    compatible = "zmk,input-listener";
-    device = <&trackball>;
-
-    scroller {
-        layers = <3 4>;
-        input-processors = <
-            &zip_xy_to_scroll_mapper
             &zip_scroll_snap
+            &zip_scroll_scaler 1 5
         >;
     };
 };
