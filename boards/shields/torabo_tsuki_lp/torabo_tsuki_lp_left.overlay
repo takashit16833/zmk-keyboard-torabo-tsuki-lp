@@ -5,11 +5,11 @@
 &pointing_listener {
     input-processors = <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>;
 
-    scroll_layer_3 {
-        layers = <3>;
+    scroll_layer_3_4 {
+        layers = <3 4>;
         input-processors = <
             &zip_xy_to_scroll_mapper
-            &zip_scroll_scaler 1 4
+            &zip_scroll_scaler 1 5
         >;
     };
 };
