@@ -17,12 +17,12 @@
 
 / {
     behaviors {
-        mo3_or_tog4: mo3_or_tog4 {
+        ctrl_or_scroll_toggle: ctrl_or_scroll_toggle {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "hold-preferred";
             tapping-term-ms = <200>;
-            bindings = <&mo>, <&tog>;
+            bindings = <&kp>, <&tog>;
         };
     };
 
@@ -52,11 +52,11 @@
 
         layer_0 {
             bindings = <
-&trans  &trans     &trans            &trans    &trans    &trans                                            &trans       &trans    &trans     &trans    &trans     &trans
-&trans  &kp Q      &kp L             &kp U     &kp COMMA &kp DOT                                           &kp F        &kp W     &kp R      &kp Y     &kp P      &trans
-&trans  &kp E      &kp I             &kp A     &kp O     &kp MINUS     &trans                     &trans    &kp K        &kp T     &kp N      &kp S     &kp H      &trans
-&trans  &kp LCTRL  &mo3_or_tog4 3 4  &mkp LCLK &kp C     &kp V         &kp RET                    &kp TAB   &kp G        &kp D     &kp M      &kp J     &kp B      &trans
-&trans  &trans     &trans            &trans    &trans    &lt 1 ESCAPE  &lt 2 SPACE                &kp RGUI  &kp RSHIFT   &kp RALT  &kp X      &kp Z     &trans     &trans
+&trans  &trans                          &trans  &trans    &trans    &trans                                &trans       &trans    &trans     &trans    &trans     &trans
+&trans  &kp Q                           &kp L   &kp U     &kp COMMA &kp DOT                               &kp F        &kp W     &kp R      &kp Y     &kp P      &trans
+&trans  &kp E                           &kp I   &kp A     &kp O     &kp MINUS     &trans        &trans    &kp K        &kp T     &kp N      &kp S     &kp H      &trans
+&trans  &ctrl_or_scroll_toggle LCTRL 4  &mo 3   &mkp LCLK &kp C     &kp V         &kp RET       &kp TAB   &kp G        &kp D     &kp M      &kp J     &kp B      &trans
+&trans  &trans                          &trans  &trans    &trans    &lt 1 ESCAPE  &lt 2 SPACE   &kp RGUI  &kp RSHIFT   &kp RALT  &kp X      &kp Z     &trans     &trans
             >;
         };
 
