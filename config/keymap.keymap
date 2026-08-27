@@ -56,7 +56,7 @@
                 &trans  &kp Q  &kp L  &kp U  &kp COMMA  &kp DOT  &kp F  &kp W  &kp R  &kp Y  &kp P  &trans
                 &trans  &kp E  &kp I  &kp A  &kp O  &kp MINUS  &trans  &trans  &kp K  &kp T  &kp N  &kp S  &kp H  &trans
                 &trans  &ctrl_or_scroll_toggle LCTRL 4  &mo 3  &mkp LCLK  &kp C  &kp V  &kp RET  &kp TAB  &kp G  &kp D  &kp M  &kp J  &kp B  &trans
-                &trans  &mt LG(LALT) ESCAPE  &trans  &trans  &trans  &mo 1  &lt 2 SPACE  &kp RGUI  &kp RSHIFT  &kp RALT  &kp X  &kp Z  &trans  &trans
+                &trans  &mt LG(LALT) ESCAPE  &trans  &trans  &trans  &mo 1  &lt 2 SPACE  &kp RGUI  &kp RSHIFT  &kp RALT  &kp X  &kp Z  &mo 6  &trans
             >;
         };
 
