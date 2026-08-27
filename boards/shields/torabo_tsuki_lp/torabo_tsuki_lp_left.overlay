@@ -6,6 +6,14 @@
 &pointing_listener {
     input-processors = <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>;
 
+    free_scroll_layer_6 {
+        layers = <6>;
+        input-processors = <
+            &zip_xy_to_scroll_mapper
+            &zip_scroll_scaler 1 5
+        >;
+    };
+
     scroll_layer_3_4 {
         layers = <3 4>;
         input-processors = <
