@@ -65,7 +65,7 @@
                 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
                 &trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &trans
                 &trans  &kp LANG2  &kp LEFT  &kp UP_ARROW  &kp DOWN  &kp RIGHT  &trans  &trans  &kp EQUAL  &kp INT_YEN  &kp LBKT  &kp SEMI  &kp SQT  &trans
-                &trans  &mt LCTRL LANG1  &trans  &kp LG(C)  &kp BSPC  &kp DELETE  &trans  &trans  &trans  &kp LS(INT_RO)  &kp RBKT  &kp BSLH  &kp FSLH  &trans
+                &trans  &mt LCTRL LANG1  &trans  &kp LG(C)  &kp BSPC  &kp DELETE  &trans  &trans  &trans  &kp INT_RO  &kp RBKT  &kp BSLH  &kp FSLH  &trans
                 &trans  &trans  &trans  &trans  &trans  &mo 5  &mo 5  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
