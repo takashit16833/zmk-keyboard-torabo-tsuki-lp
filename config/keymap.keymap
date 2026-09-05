@@ -83,7 +83,7 @@
         layer_3 {
             bindings = <
                 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &kp F15  &kp F16  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &kp F15  &kp F16  &trans  &bt BT_PRV  &bt BT_NXT  &trans  &trans  &trans  &trans
                 &trans  &trans  &trans  &kp K_VOL_UP  &kp K_VOL_DN  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
                 &trans  &trans  &trans  &mkp RCLK  &cmd_w  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
                 &trans  &trans  &trans  &trans  &trans  &mkp MB4  &mkp MB5  &trans  &trans  &trans  &trans  &trans  &trans  &trans
