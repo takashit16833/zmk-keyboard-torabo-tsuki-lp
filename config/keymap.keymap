@@ -103,9 +103,9 @@
         layer_5 {
             bindings = <
                 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans  &trans  &trans  &kp LC(LG(LA(F)))  &kp LC(LG(LA(W)))  &kp LC(LG(LA(R)))  &kp LC(LG(LA(Y)))  &kp LC(LG(LA(P)))  &trans
-                &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LC(LG(LA(K)))  &kp LC(LG(LA(T)))  &kp LC(LG(LA(N)))  &kp LC(LG(LA(S)))  &kp LC(LG(LA(H)))  &trans
-                &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LC(LG(LA(TAB)))  &kp LC(LG(LA(G)))  &kp LC(LG(LA(D)))  &kp LC(LG(LA(M)))  &kp LC(LG(LA(J)))  &kp LC(LG(LA(B)))  &trans
+                &trans  &kp LC(LG(LA(Q)))  &kp LC(LG(LA(L)))  &kp LC(LG(LA(U)))  &kp LC(LG(LA(COMMA)))  &kp LC(LG(LA(DOT)))  &kp LC(LG(LA(F)))  &kp LC(LG(LA(W)))  &kp LC(LG(LA(R)))  &kp LC(LG(LA(Y)))  &kp LC(LG(LA(P)))  &trans
+                &trans  &kp LC(LG(LA(E)))  &kp LC(LG(LA(I)))  &kp LC(LG(LA(A)))  &kp LC(LG(LA(O)))  &kp LC(LG(LA(MINUS)))  &trans  &trans  &kp LC(LG(LA(K)))  &kp LC(LG(LA(T)))  &kp LC(LG(LA(N)))  &kp LC(LG(LA(S)))  &kp LC(LG(LA(H)))  &trans
+                &trans  &trans  &trans  &trans  &kp LC(LG(LA(C)))  &kp LC(LG(LA(V)))  &kp LC(LG(LA(RET)))  &kp LC(LG(LA(TAB)))  &kp LC(LG(LA(G)))  &kp LC(LG(LA(D)))  &kp LC(LG(LA(M)))  &kp LC(LG(LA(J)))  &kp LC(LG(LA(B)))  &trans
                 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LC(LG(LA(X)))  &kp LC(LG(LA(Z)))  &trans  &trans
             >;
         };
@@ -113,9 +113,9 @@
         layer_6 {
             bindings = <
                 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &kp LC(LG(LA(Q)))  &kp LC(LG(LA(L)))  &kp LC(LG(LA(U)))  &kp LC(LG(LA(COMMA)))  &kp LC(LG(LA(DOT)))  &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &kp LC(LG(LA(E)))  &kp LC(LG(LA(I)))  &kp LC(LG(LA(A)))  &kp LC(LG(LA(O)))  &kp LC(LG(LA(MINUS)))  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans  &kp LC(LG(LA(C)))  &kp LC(LG(LA(V)))  &kp LC(LG(LA(RET)))  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
                 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
