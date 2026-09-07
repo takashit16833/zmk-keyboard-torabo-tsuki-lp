@@ -43,7 +43,7 @@
         ao_escape {
             bindings = <&kp ESCAPE>;
             key-positions = <12 13>;
-            layers = <0>;
+            layers = <0 4>;
             timeout-ms = <30>;
         };
 
