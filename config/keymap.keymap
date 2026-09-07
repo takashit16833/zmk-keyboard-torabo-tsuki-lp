@@ -40,6 +40,13 @@
     combos {
         compatible = "zmk,combos";
 
+        ao_escape {
+            bindings = <&kp ESCAPE>;
+            key-positions = <27 28>;
+            layers = <0>;
+            timeout-ms = <30>;
+        };
+
         bt_clear {
             bindings = <&bt BT_CLR>;
             key-positions = <28 29>;
