@@ -44,7 +44,7 @@
                 , <&macro_tap &kp LANG2>;
         };
 
-        grep_recursive_context: grep_recursive_context {
+        grep_recursive_context_30: grep_recursive_context_30 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <30>;
@@ -52,9 +52,37 @@
             bindings
                 = <&kp G &kp R &kp E &kp P>
                 , <&kp SPACE>
-                , <&kp MINUS &kp R &kp N &kp C>
+                , <&kp MINUS &kp LS(R) &kp N &kp LS(C)>
                 , <&kp SPACE &kp N2 &kp SPACE>
-                , <&kp MINUS &kp MINUS &kp C &kp O &kp L &kp O &kp R &kp EQUAL &kp A &kp U &kp T &kp O>
+                , <&kp MINUS &kp MINUS &kp C &kp O &kp L &kp O &kp R &kp LS(MINUS) &kp A &kp U &kp T &kp O>
+                , <&kp SPACE>;
+        };
+
+        grep_recursive_context_10: grep_recursive_context_10 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings
+                = <&kp G &kp R &kp E &kp P>
+                , <&kp SPACE>
+                , <&kp MINUS &kp LS(R) &kp N &kp LS(C)>
+                , <&kp SPACE &kp N2 &kp SPACE>
+                , <&kp MINUS &kp MINUS &kp C &kp O &kp L &kp O &kp R &kp LS(MINUS) &kp A &kp U &kp T &kp O>
+                , <&kp SPACE>;
+        };
+
+        grep_recursive_context_5: grep_recursive_context_5 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <5>;
+            tap-ms = <5>;
+            bindings
+                = <&kp G &kp R &kp E &kp P>
+                , <&kp SPACE>
+                , <&kp MINUS &kp LS(R) &kp N &kp LS(C)>
+                , <&kp SPACE &kp N2 &kp SPACE>
+                , <&kp MINUS &kp MINUS &kp C &kp O &kp L &kp O &kp R &kp LS(MINUS) &kp A &kp U &kp T &kp O>
                 , <&kp SPACE>;
         };
     };
@@ -165,7 +193,7 @@
                 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
                 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
                 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &grep_recursive_context  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &grep_recursive_context_30  &grep_recursive_context_10  &grep_recursive_context_5  &trans  &trans  &trans
                 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
