@@ -70,16 +70,9 @@
             timeout-ms = <30>;
         };
 
-        tn_eisu {
-            bindings = <&kp LANG2>;
-            key-positions = <16 17>;
-            layers = <0 4>;
-            timeout-ms = <30>;
-        };
-
-        ns_kana {
-            bindings = <&kp LANG1>;
-            key-positions = <17 18>;
+        ao_eisu_escape_eisu {
+            bindings = <&esc_eisu>;
+            key-positions = <12 13 39>;
             layers = <0 4>;
             timeout-ms = <30>;
         };
@@ -107,7 +100,7 @@
                 &trans  &kp Q  &kp L  &kp U  &kp COMMA  &kp DOT  &kp F  &kp W  &kp R  &kp Y  &kp P  &trans
                 &trans  &kp E  &kp I  &kp A  &kp O  &kp MINUS  &trans  &trans  &kp K  &kp T  &kp N  &kp S  &kp H  &trans
                 &trans  &ctrl_or_scroll_toggle LCTRL 4  &mo 3  &mkp LCLK  &kp C  &kp V  &kp RET  &kp TAB  &kp G  &kp D  &kp M  &kp J  &kp B  &trans
-                &trans  &kp LG(LALT)  &trans  &trans  &trans  &mo 1  &lt 2 SPACE  &kp RGUI  &kp RSHIFT  &kp RALT  &kp X  &kp Z  &sl 6  &trans
+                &trans  &kp LG(LALT)  &trans  &trans  &trans  &mo 1  &lt 2 SPACE  &mt RGUI LANG1  &mt RSHIFT LANG2  &kp RALT  &kp X  &kp Z  &sl 6  &trans
             >;
         };
 
