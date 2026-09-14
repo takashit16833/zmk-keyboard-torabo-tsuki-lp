@@ -100,7 +100,7 @@
                 &trans  &kp Q  &kp L  &kp U  &kp COMMA  &kp DOT  &kp F  &kp W  &kp R  &kp Y  &kp P  &trans
                 &trans  &kp E  &kp I  &kp A  &kp O  &kp MINUS  &trans  &trans  &kp K  &kp T  &kp N  &kp S  &kp H  &trans
                 &trans  &ctrl_or_scroll_toggle LCTRL 4  &mo 3  &mkp LCLK  &kp C  &kp V  &kp RET  &kp TAB  &kp G  &kp D  &kp M  &kp J  &kp B  &trans
-                &trans  &kp LG(LALT)  &trans  &trans  &trans  &mo 1  &lt 2 SPACE  &kp RGUI  &kp RSHIFT  &kp RALT  &kp X  &kp Z  &sl 6  &trans
+                &trans  &kp LG(LALT)  &trans  &trans  &trans  &mo 1  &lt 2 SPACE  &mt RGUI LANG1  &mt RSHIFT LANG2  &kp RALT  &kp X  &kp Z  &sl 6  &trans
             >;
         };
 
@@ -108,8 +108,8 @@
             bindings = <
                 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
                 &trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &trans
-                &trans  &kp LANG2  &kp LEFT  &kp UP_ARROW  &kp DOWN  &kp RIGHT  &trans  &trans  &kp EQUAL  &kp INT_YEN  &kp LBKT  &kp SEMI  &kp SQT  &trans
-                &trans  &mt LCTRL LANG1  &trans  &kp LG(C)  &kp BSPC  &kp DELETE  &trans  &trans  &trans  &kp INT_RO  &kp RBKT  &kp BSLH  &kp FSLH  &trans
+                &trans  &trans  &kp LEFT  &kp UP_ARROW  &kp DOWN  &kp RIGHT  &trans  &trans  &kp EQUAL  &kp INT_YEN  &kp LBKT  &kp SEMI  &kp SQT  &trans
+                &trans  &trans  &trans  &kp LG(C)  &kp BSPC  &kp DELETE  &trans  &trans  &trans  &kp INT_RO  &kp RBKT  &kp BSLH  &kp FSLH  &trans
                 &trans  &trans  &trans  &trans  &trans  &mo 5  &mo 5  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
