@@ -70,6 +70,20 @@
             timeout-ms = <30>;
         };
 
+        kt_ctrl_c {
+            bindings = <&kp LC(C)>;
+            key-positions = <15 16>;
+            layers = <0 4>;
+            timeout-ms = <30>;
+        };
+
+        tn_ctrl_x {
+            bindings = <&kp LC(X)>;
+            key-positions = <16 17>;
+            layers = <0 4>;
+            timeout-ms = <30>;
+        };
+
         ao_eisu_escape_eisu {
             bindings = <&esc_eisu>;
             key-positions = <12 13 39>;
