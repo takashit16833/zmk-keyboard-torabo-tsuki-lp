@@ -36,6 +36,12 @@
                 , <&macro_tap &kp LANG2>;
         };
 
+        emacs_org_prefix: emacs_org_prefix {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap &kp LC(C) &kp LC(X)>;
+        };
+
         grep_recursive_context: grep_recursive_context {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -73,6 +79,13 @@
             bindings = <&kp LC(C)>;
             key-positions = <16 17>;
             layers = <2>;
+            timeout-ms = <30>;
+        };
+
+        tn_org_prefix {
+            bindings = <&emacs_org_prefix>;
+            key-positions = <16 17>;
+            layers = <3>;
             timeout-ms = <30>;
         };
 
