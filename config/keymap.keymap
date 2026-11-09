@@ -277,7 +277,7 @@
                 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
                 &trans  &trans  &trans  &kp F15  &kp F16  &trans  &bt_mac_0  &bt_mac_1  &bt_win_2  &trans  &trans  &trans
                 &trans  &trans  &trans  &kp K_VOL_UP  &kp K_VOL_DN  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &kp LA(ESCAPE)  &trans  &mkp RCLK  &kp LC(W)  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &kp LA(ESCAPE)  &trans  &mkp RCLK  &kp F23  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
                 &trans  &trans  &trans  &trans  &trans  &mkp MB4  &mkp MB5  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
