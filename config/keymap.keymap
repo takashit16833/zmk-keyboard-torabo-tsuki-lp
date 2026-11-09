@@ -238,7 +238,7 @@
                 &trans  &kp Q  &kp L  &kp U  &kp COMMA  &kp DOT  &kp F  &kp W  &kp R  &kp Y  &kp P  &trans
                 &trans  &kp E  &kp I  &kp A  &kp O  &kp MINUS  &trans  &trans  &kp K  &kp T  &kp N  &kp S  &kp H  &trans
                 &trans  &ctrl_or_scroll_toggle LCTRL 11  &mo 14  &mkp LCLK  &kp C  &kp V  &kp RET  &kp TAB  &kp G  &kp D  &kp M  &kp J  &kp B  &trans
-                &trans  &mt LG(LALT) LANG1  &trans  &trans  &trans  &mo 12  &lt 13 SPACE  &kp RGUI  &kp RSHIFT  &kp RALT  &kp X  &kp Z  &kp LANG2  &trans
+                &trans  &mt LG(LALT) LANG1  &trans  &trans  &trans  &mo 12  &lt 13 SPACE  &kp RALT  &kp RSHIFT  &kp RGUI  &kp X  &kp Z  &kp LANG2  &trans
             >;
         };
 
@@ -257,7 +257,7 @@
                 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
                 &trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &trans
                 &trans  &trans  &kp LEFT  &kp UP_ARROW  &kp DOWN  &kp RIGHT  &trans  &trans  &kp EQUAL  &kp INT_YEN  &kp LBKT  &kp SEMI  &kp SQT  &trans
-                &trans  &trans  &trans  &kp LG(C)  &kp BSPC  &kp DELETE  &trans  &trans  &trans  &kp INT_RO  &kp RBKT  &kp BSLH  &kp FSLH  &trans
+                &trans  &trans  &trans  &kp LC(C)  &kp BSPC  &kp DELETE  &trans  &trans  &trans  &kp INT_RO  &kp RBKT  &kp BSLH  &kp FSLH  &trans
                 &trans  &trans  &trans  &trans  &trans  &mo 15  &mo 15  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
@@ -267,7 +267,7 @@
                 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
                 &trans  &trans  &trans  &trans  &trans  &trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &trans
                 &trans  &trans  &kp HOME  &kp PG_UP  &kp PAGE_DOWN  &kp END  &trans  &trans  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &trans
-                &trans  &trans  &trans  &kp LG(V)  &kp RC(C)  &kp RC(G)  &trans  &trans  &kp F11  &kp F12  &kp F13  &kp F14  &kp F15  &trans
+                &trans  &trans  &trans  &kp LC(V)  &kp RC(C)  &kp RC(G)  &trans  &trans  &kp F11  &kp F12  &kp F13  &kp F14  &kp F15  &trans
                 &trans  &trans  &trans  &trans  &trans  &mo 15  &mo 15  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
@@ -277,7 +277,7 @@
                 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
                 &trans  &trans  &trans  &kp F15  &kp F16  &trans  &bt_mac_0  &bt_mac_1  &bt_win_2  &trans  &trans  &trans
                 &trans  &trans  &trans  &kp K_VOL_UP  &kp K_VOL_DN  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &kp LA(ESCAPE)  &trans  &mkp RCLK  &kp LG(W)  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &kp LA(ESCAPE)  &trans  &mkp RCLK  &kp LC(W)  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
                 &trans  &trans  &trans  &trans  &trans  &mkp MB4  &mkp MB5  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
@@ -285,10 +285,10 @@
         layer_15 {
             bindings = <
                 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &kp LC(LG(LA(Q)))  &kp LC(LG(LA(L)))  &kp LC(LG(LA(U)))  &kp LC(LG(LA(COMMA)))  &kp LC(LG(LA(DOT)))  &kp LC(LG(LA(F)))  &kp LC(LG(LA(W)))  &kp LC(LG(LA(R)))  &kp LC(LG(LA(Y)))  &kp LC(LG(LA(P)))  &trans
-                &trans  &kp LC(LG(LA(E)))  &kp LC(LG(LA(I)))  &kp LC(LG(LA(A)))  &kp LC(LG(LA(O)))  &kp LC(LG(LA(MINUS)))  &trans  &trans  &kp LC(LG(LA(K)))  &kp LC(LG(LA(T)))  &kp LC(LG(LA(N)))  &kp LC(LG(LA(S)))  &kp LC(LG(LA(H)))  &trans
-                &trans  &trans  &trans  &trans  &kp LC(LG(LA(C)))  &kp LC(LG(LA(V)))  &kp LC(LG(LA(RET)))  &kp LC(LG(LA(TAB)))  &kp LC(LG(LA(G)))  &kp LC(LG(LA(D)))  &kp LC(LG(LA(M)))  &kp LC(LG(LA(J)))  &kp LC(LG(LA(B)))  &trans
-                &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LC(LG(LA(X)))  &kp LC(LG(LA(Z)))  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans  &trans  &kp LG(N1)  &kp LG(N2)  &kp LG(N3)  &kp LG(N4)  &kp LG(N5)  &trans
+                &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LG(N6)  &kp LG(N7)  &kp LG(N8)  &kp LG(N9)  &kp LG(N0)  &trans
+                &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
