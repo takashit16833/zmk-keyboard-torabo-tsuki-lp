@@ -60,6 +60,19 @@
             bindings = <&macro_tap &kp LC(C) &kp LC(X)>;
         };
 
+        // 診断用: Ctrl, Alt を順に押し、その後 Home を短く押す。
+        // 通常のノートPCの手動入力に近いキー送信順序を試す。
+        rdp_home_sequential_test: rdp_home_sequential_test {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings
+                = <&macro_press &kp LCTRL &kp LALT>
+                , <&macro_tap &kp HOME>
+                , <&macro_release &kp LALT &kp LCTRL>;
+        };
+
         // 診断用: Ctrl+Alt+Home を 300ms 維持してから離す。
         rdp_home_hold_test: rdp_home_hold_test {
             compatible = "zmk,behavior-macro";
@@ -318,7 +331,7 @@
             bindings = <
                 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
                 &trans  &trans  &trans  &trans  &trans  &trans  &kp LG(N1)  &kp LG(N2)  &kp LG(N3)  &kp LG(N4)  &kp LG(N5)  &trans
-                &trans  &trans  &kp LC(HOME)  &trans  &kp LA(HOME)  &kp LC(LALT)  &trans  &trans  &kp LG(N6)  &kp LG(N7)  &kp LG(N8)  &kp LG(N9)  &kp LG(N0)  &trans
+                &trans  &rdp_home_sequential_test  &kp LC(HOME)  &kp LC(LA(HOME))  &kp LA(HOME)  &kp LC(LALT)  &trans  &trans  &kp LG(N6)  &kp LG(N7)  &kp LG(N8)  &kp LG(N9)  &kp LG(N0)  &trans
                 &trans  &trans  &trans  &trans  &rdp_home_hold_test  &rdp_desktop_right  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
                 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
