@@ -70,9 +70,11 @@
             bindings
                 = <&macro_press &kp LCTRL &kp LALT>
                 , <&macro_tap &kp HOME>
-                , <&macro_release &kp LALT &kp LCTRL>
-                , <&macro_wait_time 150>
-                , <&kp LG(LC(LEFT))>;
+                , <&macro_release &kp LALT>
+                , <&macro_wait_time 0>
+                , <&kp LCTRL>
+                , <&macro_wait_time 40>
+                , <&macro_tap &kp LG(LC(LEFT))>;
         };
 
         rdp_desktop_right: rdp_desktop_right {
@@ -83,9 +85,11 @@
             bindings
                 = <&macro_press &kp LCTRL &kp LALT>
                 , <&macro_tap &kp HOME>
-                , <&macro_release &kp LALT &kp LCTRL>
-                , <&macro_wait_time 150>
-                , <&kp LG(LC(RIGHT))>;
+                , <&macro_release &kp LALT>
+                , <&macro_wait_time 0>
+                , <&kp LCTRL>
+                , <&macro_wait_time 40>
+                , <&macro_tap &kp LG(LC(RIGHT))>;
         };
 
         grep_recursive_context: grep_recursive_context {
