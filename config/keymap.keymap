@@ -309,7 +309,7 @@
             bindings = <
                 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
                 &trans  &trans  &trans  &trans  &trans  &trans  &kp LG(N1)  &kp LG(N2)  &kp LG(N3)  &kp LG(N4)  &kp LG(N5)  &trans
-                &trans  &trans  &kp F19  &kp F22  &kp F20  &kp F21  &trans  &trans  &kp LG(N6)  &kp LG(N7)  &kp LG(N8)  &kp LG(N9)  &kp LG(N0)  &trans
+                &trans  &trans  &kp LG(LEFT)  &kp LG(UP_ARROW)  &kp LG(DOWN)  &kp LG(RIGHT)  &trans  &trans  &kp LG(N6)  &kp LG(N7)  &kp LG(N8)  &kp LG(N9)  &kp LG(N0)  &trans
                 &trans  &trans  &trans  &trans  &rdp_desktop_left  &rdp_desktop_right  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
                 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
