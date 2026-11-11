@@ -60,6 +60,29 @@
             bindings = <&macro_tap &kp LC(C) &kp LC(X)>;
         };
 
+        // RDP 全画面でもローカルの仮想デスクトップを切り替える。
+        rdp_desktop_left: rdp_desktop_left {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings
+                = <&kp LC(LA(HOME))>
+                , <&macro_wait_time 150>
+                , <&kp LG(LC(LEFT))>;
+        };
+
+        rdp_desktop_right: rdp_desktop_right {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings
+                = <&kp LC(LA(HOME))>
+                , <&macro_wait_time 150>
+                , <&kp LG(LC(RIGHT))>;
+        };
+
         grep_recursive_context: grep_recursive_context {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -287,7 +310,7 @@
                 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
                 &trans  &trans  &trans  &trans  &trans  &trans  &kp LG(N1)  &kp LG(N2)  &kp LG(N3)  &kp LG(N4)  &kp LG(N5)  &trans
                 &trans  &trans  &kp F19  &kp F22  &kp F20  &kp F21  &trans  &trans  &kp LG(N6)  &kp LG(N7)  &kp LG(N8)  &kp LG(N9)  &kp LG(N0)  &trans
-                &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans  &rdp_desktop_left  &rdp_desktop_right  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
                 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
