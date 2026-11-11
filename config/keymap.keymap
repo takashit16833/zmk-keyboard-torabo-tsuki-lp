@@ -61,13 +61,16 @@
         };
 
         // RDP 全画面でもローカルの仮想デスクトップを切り替える。
+        // Ctrl、Altを先に押してからHomeを短く入力する（診断ブランチで短押し成功）。
         rdp_desktop_left: rdp_desktop_left {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <40>;
             tap-ms = <40>;
             bindings
-                = <&kp LC(LA(HOME))>
+                = <&macro_press &kp LCTRL &kp LALT>
+                , <&macro_tap &kp HOME>
+                , <&macro_release &kp LALT &kp LCTRL>
                 , <&macro_wait_time 150>
                 , <&kp LG(LC(LEFT))>;
         };
@@ -78,7 +81,9 @@
             wait-ms = <40>;
             tap-ms = <40>;
             bindings
-                = <&kp LC(LA(HOME))>
+                = <&macro_press &kp LCTRL &kp LALT>
+                , <&macro_tap &kp HOME>
+                , <&macro_release &kp LALT &kp LCTRL>
                 , <&macro_wait_time 150>
                 , <&kp LG(LC(RIGHT))>;
         };
