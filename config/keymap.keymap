@@ -60,6 +60,15 @@
             bindings = <&macro_tap &kp LC(C) &kp LC(X)>;
         };
 
+        // 診断用: Ctrl+Alt+Home を 300ms 維持してから離す。
+        rdp_home_hold_test: rdp_home_hold_test {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <300>;
+            bindings = <&kp LC(LA(HOME))>;
+        };
+
         // RDP 全画面でもローカルの仮想デスクトップを切り替える。
         rdp_desktop_left: rdp_desktop_left {
             compatible = "zmk,behavior-macro";
@@ -310,7 +319,7 @@
                 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
                 &trans  &trans  &trans  &trans  &trans  &trans  &kp LG(N1)  &kp LG(N2)  &kp LG(N3)  &kp LG(N4)  &kp LG(N5)  &trans
                 &trans  &trans  &kp LC(HOME)  &trans  &kp LA(HOME)  &kp LC(LALT)  &trans  &trans  &kp LG(N6)  &kp LG(N7)  &kp LG(N8)  &kp LG(N9)  &kp LG(N0)  &trans
-                &trans  &trans  &trans  &trans  &kp LC(LA(HOME))  &rdp_desktop_right  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans  &rdp_home_hold_test  &rdp_desktop_right  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
                 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
