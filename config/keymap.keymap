@@ -88,6 +88,40 @@
                 , <&kp LG(LC(RIGHT))>;
         };
 
+        // 診断用E: 前半のキーは同じ。Ctrl解放後に150ms待ち、後半は一括送信。
+        rdp_desktop_delay_only_test: rdp_desktop_delay_only_test {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings
+                = <&macro_press &kp LCTRL &kp LALT>
+                , <&macro_tap &kp HOME>
+                , <&macro_release &kp LALT>
+                , <&macro_wait_time 150>
+                , <&kp LCTRL>
+                , <&macro_wait_time 40>
+                , <&macro_tap &kp LG(LC(LEFT))>;
+        };
+
+        // 診断用A: 上記と同じ待機。後半だけWin、Ctrl、←を順次送信。
+        rdp_desktop_sequential_test: rdp_desktop_sequential_test {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings
+                = <&macro_press &kp LCTRL &kp LALT>
+                , <&macro_tap &kp HOME>
+                , <&macro_release &kp LALT>
+                , <&macro_wait_time 150>
+                , <&kp LCTRL>
+                , <&macro_wait_time 40>
+                , <&macro_press &kp LGUI &kp LCTRL>
+                , <&macro_tap &kp LEFT>
+                , <&macro_release &kp LCTRL &kp LGUI>;
+        };
+
         grep_recursive_context: grep_recursive_context {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -314,7 +348,7 @@
             bindings = <
                 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
                 &trans  &trans  &trans  &trans  &trans  &trans  &kp LG(N1)  &kp LG(N2)  &kp LG(N3)  &kp LG(N4)  &kp LG(N5)  &trans
-                &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LG(N6)  &kp LG(N7)  &kp LG(N8)  &kp LG(N9)  &kp LG(N0)  &trans
+                &trans  &rdp_desktop_delay_only_test  &trans  &rdp_desktop_sequential_test  &trans  &trans  &trans  &trans  &kp LG(N6)  &kp LG(N7)  &kp LG(N8)  &kp LG(N9)  &kp LG(N0)  &trans
                 &trans  &trans  &trans  &trans  &rdp_desktop_left  &rdp_desktop_right  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
                 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
