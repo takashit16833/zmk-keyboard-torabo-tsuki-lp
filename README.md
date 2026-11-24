@@ -48,6 +48,6 @@ Hyper + C/V の RDP 仮想デスクトップ移動と、Hyper + 数字の Win+�
 
 ### Windows（コピーしたURLをEdgeで開く）
 
-Windows Hyper + U は `F23` を送信する。Windows側で常駐する `dotfiles-win/autohotkey/cycle-window.ahk` が `open-url.ahk` を読み込み、クリップボード内の単一のHTTP(S) URLをMicrosoft Edgeで開く。URL以外の文字列の場合は何もしない。
+Windows Hyper + U は通常の `Ctrl+Alt+Win+U` を直接送信する。Windows側で常駐する `dotfiles-win/autohotkey/cycle-window.ahk` が `open-url.ahk` を読み込み、クリップボード内の単一のHTTP(S) URLをMicrosoft Edgeで開く。URL以外の文字列の場合は何もしない。
 
 ZMKの更新ファームウェアを書き込むまでは、通常のWindowsキーボードから `Ctrl+Alt+Win+U` を押してAutoHotkey側だけを確認できる。既存のウィンドウ配置キーとRDP仮想デスクトップ切り替えは変更していない。
