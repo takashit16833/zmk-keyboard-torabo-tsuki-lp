@@ -46,8 +46,8 @@ Windows 用 Hyper レイヤー（layer_15）から F19〜F22 を送信し、PC �
 
 Hyper + C/V の RDP 仮想デスクトップ移動と、Hyper + 数字の Win+数字は変更していない。配置キーの動作確認には、Windows 側で `dotfiles-win/install.ps1` により AutoHotkey v2 を起動し、更新したZMKファームウェアを実機に書き込む必要がある。
 
-### Windows（コピーしたURLをEdgeで開く）
+### Windows（選択したURLをEdgeで開く）
 
-Windows Hyper + U は通常の `Ctrl+Alt+Win+U` を直接送信する。Windows側で常駐する `dotfiles-win/autohotkey/cycle-window.ahk` が `open-url.ahk` を読み込み、クリップボード内の単一のHTTP(S) URLをMicrosoft Edgeで開く。URL以外の文字列の場合は何もしない。
+Windows Hyper + U は通常の `Ctrl+Alt+Win+U` を直接送信する。Windows側で常駐する `dotfiles-win/autohotkey/cycle-window.ahk` が `open-url.ahk` を読み込み、選択中の単一のHTTP(S) URLを一時的にコピーしてMicrosoft Edgeで開く。クリップボードは元に戻し、選択文字列を取得できない場合やURL以外では何も開かない。
 
 ZMKの更新ファームウェアを書き込むまでは、通常のWindowsキーボードから `Ctrl+Alt+Win+U` を押してAutoHotkey側だけを確認できる。既存のウィンドウ配置キーとRDP仮想デスクトップ切り替えは変更していない。
